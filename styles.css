@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.result {
+    border: 3px none;
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 180px;
+    height: 50vh;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.result div{
+    border: 2px none black;
+    margin: auto;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(256, 72%, 46%, 0));
+    width: 100px;
+    height: 100px;
+}
+
+.result div span {
+    font-size: 10px;
+    color: white;
+}
+
+.result div h1 {
+    font-size: 40px;
+    margin: 5px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.result p {
+    font-size: 18px;
+}
+
+.result .description {
+    font-size: 14px;
+    color: white(243, 2, 2);
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0;
+}
+
+/* This is the Second Section */
+
+.summary {
+    border: 3px none;
+    padding: 10px;
+    width: 200px;
+    height: 52vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(7, 7, 7);
+}
+
+.summary h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.summary ul {
+    list-style: none;
+    margin: auto;
+    padding: 5px;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    top: -10px;
+}
+
+.summary ul li {
+    padding: 10px 5px;
+    margin: 5px 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+span.lists{
+    margin: 5px;
+}
+
+span.percentage {
+    float: right;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+/* SUMMARY STYLING */
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+/* MEDIA QUERIES */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -100px;
+    }
+
+    .result, .summary {
+        width: 95%;
+        height: auto;
+    }
+
+    .result div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .result div h1 {
+        font-size: 30px;
+    }
+
+    .summary ul li {
+        font-size: 12px;
+    }
+
+    button {
+        width: 50%;
+        height: 40px;
+        font-size: 14px;
+        margin: 20px auto;
+        display: block;
+    }
+
+}
